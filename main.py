@@ -26,7 +26,7 @@ def protect_pdf(input_path, output_path, password):
 class PDFProtectorApp(ctk.CTk):
     def __init__(self):
         super().__init__()
-        self.title("PDF Password Protector")
+        self.title("Kavarishield - PDF Password Protector")
         self.geometry("600x480")
         self.resizable(False, False)
         ctk.set_appearance_mode("dark")
@@ -35,7 +35,7 @@ class PDFProtectorApp(ctk.CTk):
         # Judul
         self.label_title = ctk.CTkLabel(
             self, 
-            text="🔒 PDF Password Protector",
+            text="🔒 Kavarishield - PDF Password Protector",
             font=ctk.CTkFont(size=22, weight="bold")
         )
         self.label_title.pack(pady=20)
